@@ -4,7 +4,7 @@ import java.awt.*;
 
 /**
  * Programa que crea un protector de pantalla
- * @author Fernando Chavez Briceno
+ * @author Fernando Chavez Briceno correo fernando.chavez@alumnos.ucn.cl rut: 21.180.530-7
  */
 public class Main {
     public static void main(String[] args) {
@@ -48,23 +48,43 @@ public class Main {
         double y11 = y9+0.06;
 
         // velocidad de la linea principal.
-        double vx = Math.random();
-        double vy = Math.random();
+        double vx = 0.006*Math.random();
+        double vy = 0.006*Math.random();
+
+        double vx1 = vx;
+        double vy1 = vy;
         // velocidad de la segunda linea.
-        double vx1 = Math.random();
-        double vy1 = Math.random();
-        // velocidad de la tercera linea.
-        double vx2 = Math.random();
-        double vy2 = Math.random();
-        // velocidad de la cuarta linea.
-        double vx3 = Math.random();
-        double vy3 = Math.random();
-        // velocidad de la quinta linea.
-        double vx4 = Math.random();
-        double vy4 = Math.random();
-        // velocidad de la sexta linea.
-        double vx5 = Math.random();
-        double vy5 = Math.random();
+        double vx2 = vx;
+        double vy2 = vy;
+
+        double vx3 = vx;
+        double vy3 = vy;
+        // velocidad tercera linea.
+        double vx4 = vx;
+        double vy4 = vy;
+
+        double vx5 = vx;
+        double vy5 = vy;
+        //velocidad de la cuarta linea
+        double vx6 = vx;
+        double vy6 = vy;
+
+        double vx7 = vx;
+        double vy7 = vy;
+        //velocidad de la quinta linea
+        double vx8 = vx;
+        double vy8 = vy;
+
+        double vx9 = vx;
+        double vy9 = vy;
+        //velocidad de la sexta linea.
+        double vx10 = vx;
+        double vy10 = vy;
+
+        double vx11 = vx;
+        double vy11 = vy;
+
+
         //radio general de cada circulo.
         double radio = 0.001;
         //declaramos el arreglo de colores
@@ -77,107 +97,107 @@ public class Main {
             if (Math.abs(y0 + vy) > 1.0 -radio){
                 vy = -vy;
             }
-            if (Math.abs(x1 + vx) > 1.0 - radio){
-                vx = -vx;
+            if (Math.abs(x1 + vx1) > 1.0 - radio){
+                vx1 = -vx1;
             }
-            if (Math.abs(y1 + vy) > 1.0 -radio){
-                vy = -vy;
+            if (Math.abs(y1 + vy1) > 1.0 -radio){
+                vy1 = -vy1;
             }
             //Colision segunda linea
-            if (Math.abs(x2 + vx1) > 1.0 - radio){
-                vx1 = -vx1;
+            if (Math.abs(x2 + vx2) > 1.0 - radio){
+                vx2 = -vx2;
             }
             if (Math.abs(y2 + vy1) > 1.0 -radio){
-                vy1 = -vy1;
+                vy2 = -vy2;
             }
-            if (Math.abs(x3 + vx1) > 1.0 - radio){
-                vx1 = -vx1;
+            if (Math.abs(x3 + vx3) > 1.0 - radio){
+                vx3 = -vx3;
             }
-            if (Math.abs(y3 + vy1) > 1.0 -radio){
-                vy1 = -vy1;
+            if (Math.abs(y3 + vy3) > 1.0 -radio){
+                vy3 = -vy3;
             }
             //Colision tercera linea
-            if (Math.abs(x4 + vx2) > 1.0 - radio){
-                vx2 = -vx2;
+            if (Math.abs(x4 + vx4) > 1.0 - radio){
+                vx4 = -vx4;
             }
-            if (Math.abs(y4 + vy2) > 1.0 -radio){
-                vy2 = -vy2;
+            if (Math.abs(y4 + vy4) > 1.0 -radio){
+                vy4 = -vy4;
             }
-            if (Math.abs(x5 + vx2) > 1.0 - radio){
-                vx2 = -vx2;
+            if (Math.abs(x5 + vx5) > 1.0 - radio){
+                vx5 = -vx5;
             }
-            if (Math.abs(y5 + vy2) > 1.0 -radio){
-                vy2 = -vy2;
+            if (Math.abs(y5 + vy5) > 1.0 -radio){
+                vy5 = -vy5;
             }
             //Colision cuarta linea
-            if (Math.abs(x6 + vx3) > 1.0 - radio){
-                vx3 = -vx3;
+            if (Math.abs(x6 + vx6) > 1.0 - radio){
+                vx6 = -vx6;
             }
-            if (Math.abs(y6 + vy3) > 1.0 -radio){
-                vy3 = -vy3;
+            if (Math.abs(y6 + vy6) > 1.0 -radio){
+                vy6 = -vy6;
             }
-            if (Math.abs(x7 + vx3) > 1.0 - radio){
-                vx3 = -vx3;
+            if (Math.abs(x7 + vx7) > 1.0 - radio){
+                vx7 = -vx7;
             }
-            if (Math.abs(y7 + vy3) > 1.0 -radio){
-                vy3 = -vy3;
+            if (Math.abs(y7 + vy7) > 1.0 -radio){
+                vy7 = -vy7;
             }
             //Colision quinta linea
-            if (Math.abs(x8 + vx4) > 1.0 - radio){
-                vx4 = -vx4;
+            if (Math.abs(x8 + vx8) > 1.0 - radio){
+                vx8 = -vx8;
             }
-            if (Math.abs(y8 + vy4) > 1.0 -radio){
-                vy4 = -vy4;
+            if (Math.abs(y8 + vy8) > 1.0 -radio){
+                vy8 = -vy8;
             }
-            if (Math.abs(x9 + vx4) > 1.0 - radio){
-                vx4 = -vx4;
+            if (Math.abs(x9 + vx9) > 1.0 - radio){
+                vx9 = -vx9;
             }
-            if (Math.abs(y9 + vy4) > 1.0 -radio){
-                vy4 = -vy4;
+            if (Math.abs(y9 + vy9) > 1.0 -radio){
+                vy9 = -vy9;
             }
             //Colision sexta linea
-            if (Math.abs(x10 + vx5) > 1.0 - radio){
-                vx5 = -vx5;
+            if (Math.abs(x10 + vx10) > 1.0 - radio){
+                vx10 = -vx10;
             }
-            if (Math.abs(y10 + vy5) > 1.0 -radio){
-                vy5 = -vy5;
+            if (Math.abs(y10 + vy10) > 1.0 -radio){
+                vy10 = -vy10;
             }
-            if (Math.abs(x11 + vx5) > 1.0 - radio){
-                vx5 = -vx5;
+            if (Math.abs(x11 + vx11) > 1.0 - radio){
+                vx11 = -vx11;
             }
-            if (Math.abs(y11 + vy5) > 1.0 -radio){
-                vy5 = -vy5;
+            if (Math.abs(y11 + vy11) > 1.0 -radio){
+                vy11 = -vy11;
             }
             // actualizacion de posicion primera linea
             x0 += vx;
             y0 += vy;
-            x1 += vx;
-            y1 += vy;
+            x1 += vx1;
+            y1 += vy1;
             // actualizacion de posicion segunda linea
-            x2 += vx1;
-            y2 += vy1;
-            x3 += vx1;
-            y3 += vy1;
+            x2 += vx2;
+            y2 += vy2;
+            x3 += vx3;
+            y3 += vy3;
             // actualizacion de posicion tercera linea
-            x4 += vx2;
-            y4 += vy2;
-            x5 += vx2;
-            y5 += vy2;
+            x4 += vx4;
+            y4 += vy4;
+            x5 += vx5;
+            y5 += vy5;
             // actualizacion de posicion cuarta linea
-            x6 += vx3;
-            y6 += vy3;
-            x7 += vx3;
-            y7 += vy3;
+            x6 += vx6;
+            y6 += vy6;
+            x7 += vx7;
+            y7 += vy7;
             // actualizacion de posicion quinta linea
-            x8 += vx4;
-            y8 += vy4;
-            x9 += vx4;
-            y9 += vy4;
+            x8 += vx8;
+            y8 += vy8;
+            x9 += vx9;
+            y9 += vy9;
             // actualizacion de posicion sexta linea
-            x10 += vx5;
-            y10 += vy5;
-            x11 += vx5;
-            y11 += vy5;
+            x10 += vx10;
+            y10 += vy10;
+            x11 += vx11;
+            y11 += vy11;
 
             StdDraw.clear();
             //dibujar la esfera de la primera linea
@@ -186,6 +206,18 @@ public class Main {
             //dibujar la esfera de la segunda linea
             StdDraw.filledCircle(x2,y2,radio);
             StdDraw.filledCircle(x3,y3,radio);
+            //dibujar la esfera de la tercera linea
+            StdDraw.filledCircle(x4,y4,radio);
+            StdDraw.filledCircle(x5,y5,radio);
+            //dibujar la esfera de la cuarta linea
+            StdDraw.filledCircle(x6,y6,radio);
+            StdDraw.filledCircle(x7,y7,radio);
+            //dibujar la esfera de la quinta linea
+            StdDraw.filledCircle(x8,y8,radio);
+            StdDraw.filledCircle(x9,y9,radio);
+            //dibujar la esfera de la sexta linea
+            StdDraw.filledCircle(x10,y10,radio);
+            StdDraw.filledCircle(x11,y11,radio);
             //Generar las lineas.
             StdDraw.setPenColor(Color.RED);
             StdDraw.line(x0,y0,x1,y1);
